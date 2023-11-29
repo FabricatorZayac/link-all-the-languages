@@ -161,6 +161,16 @@ languages:
     requires: zig
     runtime: ""
     root: /src/zig
+  odin:
+    build:
+    - odin build hello.odin -build-mode:obj -file -no-entry-point -reloc-mode:pic
+    entry: hello_odin
+    includes: ""
+    library: ""
+    output: odin/hello.o
+    requires: odin
+    runtime: ""
+    root: /src/odin
 runtimes:
   jvm:
     build:
